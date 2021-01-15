@@ -1,0 +1,9 @@
+var playerCount,form,player,game,database
+var gameState=0
+function setup(){
+    createCanvas(400,400)
+    database=firebase.database()
+    game=new Game()
+    game.getState()
+    game.Start()
+}
